@@ -35,5 +35,5 @@ Next edit the zone file you created /etc/bind/db.morgan.com
 * Replace NS localhost. with FQDN of server
 * Create A record for your name server with servers IP address
 
-<img src="https://imgur.com/pBnK00V"/>
+<img src="https://i.imgur.com/pBnK00V.jpg"/>
 

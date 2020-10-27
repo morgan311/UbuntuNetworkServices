@@ -13,7 +13,7 @@ Default system specs should work fine, I would suggest to initially select **NAT
 ## DNS w/Bind ##
 
 Bind9 is an opens source domain name system server that can be used to run a caching or authoritative name server.
-*Installiation:*
+**Installiation:**
 * sudo apt-get install bind9 bind9utils bind9-doc
 * Primary Master Server Configuration*
 

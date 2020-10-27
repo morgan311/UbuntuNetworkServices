@@ -34,5 +34,5 @@ Next edit the zone file you created /etc/bind/db.morgan.com
 * Set valid email address using **.** in replace of @ root.morgan.com.
 * Replace NS localhost. with FQDN of server
 * Create A record for your name server with servers IP address
-!(https://imgur.com/a/gyJJiq3)
+![alt text](https://imgur.com/a/gyJJiq3)
 

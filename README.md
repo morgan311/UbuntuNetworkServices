@@ -5,5 +5,5 @@ Weccome to my Netowrk Services using Ubuntu server repositoty! For this setup I 
 ## Distro Install ##
 
 There are a few items needed to set this applicance up, in this instacne i used VMware and Ubuntu server 20.04.1 if you dont have VMware Vbox will work grab them here
-..* https://releases.ubuntu.com/20.04/
-..* https://www.virtualbox.org/wiki/Downloads
+* https://releases.ubuntu.com/20.04/
+* https://www.virtualbox.org/wiki/Downloads

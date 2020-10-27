@@ -22,10 +22,13 @@ Adding a DNS zone to bind will allow it to act as a Primary Master server. To do
 
 Add desired Zone name and zone file path.
 
-        zone "example.com" {
+        zone "morgan.com" {
              type master;
-             file "/etc/bind/db.example.com";
+             file "/etc/bind/db.morgan.com";
         };
         
 Copy and rename existing db.local file
-* sudo cp /etc/bind/db.local /etc/bind/db.example.com 
+* sudo cp /etc/bind/db.local /etc/bind/db.morgan.com 
+Next edit the zone file you created /etc/bind/db.morgan.com
+* Change the SOA from localhost. to FQDM of server ns.morgam.com. <---make sure there is a period after the FQDN
+* Set valid email address using **.** in replace of @ root.morgan.com.

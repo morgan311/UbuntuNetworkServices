@@ -18,11 +18,14 @@ Bind9 is an opens source domain name system server that can be used to run a cac
 * sudo apt-get install bind9 bind9utils bind9-doc
 
 **Primary Master Server Configuration**
-Adding a DNS zone to bind will allow it to act as a Primary Master server. To do so the **named.conf.local** locaed in /etc/bind must be edited.
+Adding a DNS zone to bind will allow it to act as a Primary Master server. To do so first edit **named.conf.local** locaed in /etc/bind must be edited.
+
+Add desired Zone name and zone file path.
 
         zone "example.com" {
              type master;
              file "/etc/bind/db.example.com";
         };
-
-
+        
+Copy and rename existing db.local file
+* sudo cp /etc/bind/db.local /etc/bind/db.example.com 

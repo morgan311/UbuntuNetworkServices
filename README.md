@@ -32,3 +32,7 @@ Copy and rename existing db.local file
 Next edit the zone file you created /etc/bind/db.morgan.com
 * Change the SOA from localhost. to FQDM of server ns.morgam.com. <---make sure there is a period after the FQDN
 * Set valid email address using **.** in replace of @ root.morgan.com.
+* Replace NS localhost. with FQDN of server
+* Create A record for your name server with servers IP address
+
+

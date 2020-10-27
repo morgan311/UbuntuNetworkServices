@@ -37,3 +37,9 @@ Next edit the zone file you created /etc/bind/db.morgan.com
 
 <img src="https://i.imgur.com/pBnK00V.jpg"/>
 
+* Restart bind server: Sudo service bind9 restart
+* Check status Sudo service bind9 status
+Basic set up should be complete! Test via client or with the dig @ command on the server.
+
+## DCHP ##
+

@@ -139,6 +139,31 @@ Configure squid by editing /etc/squid/squid.conf
 chnage default listening port edit the http_port directive
 * http_port 8888
 * the on-disk cache can be adjusted by editing cache_dir for this setup defaults are fine
+**NOTE - DONT FORGET TO OPEN PORT 8888 on your server!!**
 
 set squid access control by configuring an ACL for your private network, add the following below the ACL section
-* acl MP_NET src 10.0.0.0/24
+* acl MP_NET src 10.0.0.0/24  <-- acl name / allowed addresses
+next in the http_access section add the following
+* http_access allow MP_NET
+
+Now we can set up some redirections of sites we do not want out users to access. To do so we need to create another ACL.
+
+At the bottom of the ACL section of /etc/squid/squid.conf add the following two lines
+* acl blocksites dstdomain .neverssl.com
+* deny_info https://www.google.com all
+**In the top line you can add the domains you wish to block
+
+At the top of the http_access section add the following line **above** your allow statement 
+* http_reply_access deny blocksites all
+
+Next we need to set up the proxy to act transparently, to do so we need to add a new rule to our /etc/ufw/befor.rules
+* sudo nano /etc/ufw/before.rules
+Add the following rule in the NAT table
+
+      # nat Table rules
+        *nat
+        :POSTROUTING ACCEPT [0:0]
+        # redirect to squid
+        -A PREROUTING-p TCP -s 10.0.0.0/24 --dport 80 -j REDIRECT --to-port 8888\
+        
+

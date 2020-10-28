@@ -2,9 +2,9 @@
 # Table of Contents
 - [Intro](#Network-Services-using-Ubuntu-20.04.1-LTS)
 - [Distro Install](#Distro-Install)
-- [DNS Bind9](#DNS-w/Bind)
+- [DNS Bind9](#DNS-Bind9)
 - [DHCP](#DHCP)
-- [Uncomplicated Firewall](#FIREWALL-W/UFW-and-Masquerading)
+- [Uncomplicated Firewall](#FIREWALL-ufFW-and-Masquerading)
 - [Squid Proxy](#SQUID)
 
 # Network Services using Ubuntu 20.04.1 LTS #
@@ -20,7 +20,7 @@ There are a few items needed to set this appliance  up, in this instance I used 
 Default system specs should work fine, I would suggest to initially select **NAT** network then after add an additional NIC for your LAN. As well the PowerShell snap might be a useful add-on. 
 
 
-## DNS w/Bind ##
+## DNS Bind9 ##
 
 Bind9 is an opens source domain name system server that can be used to run a caching or authoritative name server.
 
@@ -85,7 +85,7 @@ Next configure DHCP to only issue addresses on your private network
 * INTERFACESv4="ens33"  <--private network nic
 * restart service and confirm client is getting ip from server
 
-## FIREWALL W/UFW and Masquerading ##
+## FIREWALL UFW and Masquerading ##
 
 Uncomplicated Firewall is front-end to iptables designed to make firewall management more user friendly and has a nifty NAT capabilities
 

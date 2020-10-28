@@ -46,7 +46,7 @@ Next edit the zone file you created /etc/bind/db.morgan.com
 * Check status Sudo service bind9 status
 Basic set up should be complete! Test via client or with the dig @ command on the server.
 
-## DCHP
+## DHCP
 
 Tired of boring static ip address? Install a DHCP server!
 

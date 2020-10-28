@@ -1,13 +1,13 @@
 ---
 # Table of Contents
-- [Heading](#"Network Services using Ubuntu 20.04.1 LTS")
+- [Heading](#Network)
 - [Heading](#Distro Install)
 - [Heading](#DNS w/Bind)
 - [Heading](#DHCP)
 - [Heading](#FIREWALL W/UFW and Masquerading)
 - [Heading](#SQUID)
 
-# Network Services using Ubuntu 20.04.1 LTS
+# Network Services using Ubuntu 20.04.1 LTS #
 
 Welcome to my Network Services using Ubuntu server repository! For this setup I have created an appliance (virtually) running Ubuntu 20.04.1 LTS in conjunction with very important network services no server should be without! these services include **DNS**, **DHCP** ,**UFW Firewall**, and **Squid Proxy**.
 

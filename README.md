@@ -58,17 +58,15 @@ Main config file located ub /etc/dhcp/, open dhcpd.conf in nano and configure to
 
 * sudo nano /etc/dhcp/dhcpd.conf
 
-default-lease-time 600;
-max-lease-time 7200;
-option subnet-mask 255.255.255.0;
-option broadcast-address 192.168.1.255;
-option routers 192.168.1.254;
-option domain-name-servers 192.168.1.1, 192.168.1.2;
-option domain-name "mydomain.example";
 
-subnet 192.168.1.0 netmask 255.255.255.0 {
-range 192.168.1.10 192.168.1.100;
-range 192.168.1.150 192.168.1.200;
+        default-lease-time 600;
+        max-lease-time 7200;
+        subnet 10.0.0.0 netmask 255.255.255.0 {
+        range 10.0.0.100 10.0.0.150;
+        range 10.0.0.200 10.0.0.225
+        option domain-name "morgan.com";
+        option domain-name-servers ns.morgan.com;
+        
 } 
 
 

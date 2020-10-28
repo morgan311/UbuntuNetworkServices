@@ -1,6 +1,6 @@
 ---
 # Table of Contents
-- [Heading](#Network)
+- [Heading](#Network-Services-using-Ubuntu-20.04.1-LTS)
 - [Heading](#'Distro Install')
 - [Heading](#DNS w/Bind)
 - [Heading](#DHCP)

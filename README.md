@@ -139,5 +139,6 @@ Configure squid by editing /etc/squid/squid.conf
 chnage default listening port edit the http_port directive
 * http_port 8888
 * the on-disk cache can be adjusted by editing cache_dir for this setup defaults are fine
+
 set squid access control by configuring an ACL for your private network, add the following below the ACL section
 * acl MP_NET src 10.0.0.0/24

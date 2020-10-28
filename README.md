@@ -69,5 +69,10 @@ Main config file located ub /etc/dhcp/, open dhcpd.conf in nano and configure to
         
 } 
 
+Above are the minimum configurations, enter subnet and mask of your network then enter desired ranges, in this instance the dhcp server will issus IP addresses in two ranges 10.0.0.100-150 and 10.0.0.200-225
+
+Next configure DHCP to only issed adddress on your private network
+* sudo nano /etc/default/isc-dhcp-server
+* INTERFACESv4="ens33"  <--private network nic
 
 

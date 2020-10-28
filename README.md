@@ -126,6 +126,12 @@ Lastly, disable and re-enable UFW to apply settings
 
 Squid is a caching and forwarding web proxy with a multitude of uses. 
 
-**Note: There are thousnds of lines in the squid.conf configuration file, I recommend using copying the original file and manipulate the copy on something like Notepad++ or your favorite text editor**
+**Note: There are thousnds of lines in the squid.conf configuration file, I recommend copying the original file and manipulate the copy until you get it right on something like Notepad++ or your favorite text editor**
+* sudo cp /etc/squid/squid.conf /etc/squid/squid.conf.original
 
+**INSTALLIATION**
+* sduo apt-get install squid
 
+**CONFIGURATION**
+
+Squids main configuration file is locaed in /etc/squid/

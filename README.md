@@ -1,4 +1,4 @@
- <center><h1> Network Services using Ubuntu 20.04.1 LTS </h1></center>
+ <p style="text-align: center;">Network Services using Ubuntu 20.04.1 LTS </p>
  
 # Table of Contents
 - [Intro](#Intro)

@@ -1,4 +1,4 @@
- <c># Network Services using Ubuntu 20.04.1 LTS #</c>
+ <center># Network Services using Ubuntu 20.04.1 LTS #</center>
 
 # Table of Contents
 - [Intro](#Intro)

@@ -4,7 +4,7 @@
 - [Distro Install](#Distro-Install)
 - [DNS Bind9](#DNS-Bind9)
 - [DHCP](#DHCP)
-- [Uncomplicated Firewall](#FIREWALL-ufFW-and-Masquerading)
+- [Uncomplicated Firewall](#FIREWALL-ufW-and-Masquerading)
 - [Squid Proxy](#SQUID)
 
 # Network Services using Ubuntu 20.04.1 LTS #

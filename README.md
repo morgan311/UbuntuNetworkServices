@@ -102,10 +102,25 @@ Masquerading will allow your private machines connect to the internet via your s
 * edit DEFUALT_FORWARD_POLICY="**ACCEPT**"
 * next edit /etc/ufw/sysctl.conf
 * uncomment net/ipv4/ip_forward=1 **uncomment ipv6 is desired**
-* 
+
+Next we must configure the NAT table in the /etc/ufw/before.rules file, add the following below header comments
 
 
+        # nat Table rules
+        *nat
+        :POSTROUTING ACCEPT [0:0]
 
+        # Forward traffic from ens38 through ens33.
+        -A POSTROUTING -s 10.0.0.0/24 -o ens33 -j MASQUERADE
+
+        # don't delete the 'COMMIT' line or these nat table rules won't be processed
+        COMMIT
+
+We are appending the post route to forward traffice from our private network out our public nic to the world wide web!
+
+Lastly, disable and re-enable UFW to apply settings
+* sudo ufw disable && sudo ufw enable
+* check on private client machine if you can reach the outside world
 
 
 

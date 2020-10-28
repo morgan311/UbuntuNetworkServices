@@ -122,5 +122,9 @@ Lastly, disable and re-enable UFW to apply settings
 * sudo ufw disable && sudo ufw enable
 * check on private client machine if you can reach the outside world
 
+## SQUID ##
 
+Squid is a caching and forwarding web proxy with a multitude of uses. 
+
+*Note: There are thousnds of lines in the squid.conf configuration file, I recommend using copying the original file and manipulate the copy on something like Notepad++ or your favorite text editor
 

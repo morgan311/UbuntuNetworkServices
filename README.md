@@ -78,8 +78,8 @@ Main config file located ub /etc/dhcp/, open dhcpd.conf in nano and configure to
         range 10.0.0.200 10.0.0.225
         option domain-name "morgan.com";
         option domain-name-servers ns.morgan.com;
-        
-} 
+        }
+         
 
 Above are the minimum configurations, enter subnet and mask of your network then enter desired ranges, in this instance the dhcp server will issue IP addresses in two ranges 10.0.0.100-150 and 10.0.0.200-225
 

@@ -99,7 +99,7 @@ Some examples of adding rules
 Maswuerading will allow your private machines connect to the internet via your server, some configuration is required
 
 * enable packet forwarding - sudo nano /etc/default/ufw
-* change DEFUALT_FORWARD_POLICY="**ACCPET**"
+* change DEFUALT_FORWARD_POLICY="**ACCEPT**"
 
 
 

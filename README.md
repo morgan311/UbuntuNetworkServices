@@ -1,4 +1,4 @@
-[Heading](#DHCP)
+[Heading](# DHCP)
 
 # Network Services using Ubuntu 20.04.1 LTS
 

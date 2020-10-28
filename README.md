@@ -116,7 +116,7 @@ Next we must configure the NAT table in the /etc/ufw/before.rules file, add the 
         # don't delete the 'COMMIT' line or these nat table rules won't be processed
         COMMIT
 
-We are appending the post route to forward traffice from our private network out our public nic to the world wide web!
+We are appending the post route to forward traffic from our private network out our public nic to the world wide web!
 
 Lastly, disable and re-enable UFW to apply settings
 * sudo ufw disable && sudo ufw enable

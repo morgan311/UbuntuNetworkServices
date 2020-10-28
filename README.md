@@ -57,7 +57,7 @@ Tired of boring static ip address? Install a DHCP server!
 Main config file located ub /etc/dhcp/, open dhcpd.conf in nano and configure to align with your server info
 
 * sudo nano /etc/dhcp/dhcpd.conf
-# minimal sample /etc/dhcp/dhcpd.conf
+
 default-lease-time 600;
 max-lease-time 7200;
 

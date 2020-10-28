@@ -7,6 +7,7 @@ Weccome to my Netowrk Services using Ubuntu server repositoty! For this setup I 
 There are a few items needed to set this applicance up, in this instacne i used VMware and Ubuntu server 20.04.1 if you dont have VMware Vbox will work grab them here
 * https://releases.ubuntu.com/20.04/
 * https://www.virtualbox.org/wiki/Downloads
+
 Default system specs should work fine, I would suggest to initially select **NAT** network then after add an additional NIC for your LAN. As well the PowerShell snap might be a useful add-on. 
 
 

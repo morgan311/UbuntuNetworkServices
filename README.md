@@ -1,10 +1,10 @@
 # Network Services using Ubuntu 20.04.1 LTS
 
-Weccome to my Netowrk Services using Ubuntu server repositoty! For this setup I have created an applicance (virtually) running Ubuntu 20.04.1 LTS in conjunction with very important network services no server should be without! these services inclue **DNS**, **DHCP** ,**UFW Firewall**, and **Squid Proxy**.
+Welcome to my Network Services using Ubuntu server repository! For this setup I have created an appliance (virtually) running Ubuntu 20.04.1 LTS in conjunction with very important network services no server should be without! these services include **DNS**, **DHCP** ,**UFW Firewall**, and **Squid Proxy**.
 
 ## Distro Install ##
 
-There are a few items needed to set this applicance up, in this instacne i used VMware and Ubuntu server 20.04.1 if you dont have VMware Vbox will work grab them here
+There are a few items needed to set this appliance  up, in this instance I used VMware and Ubuntu server 20.04.1 if you dont have VMware Vbox will work grab them here
 * https://releases.ubuntu.com/20.04/
 * https://www.virtualbox.org/wiki/Downloads
 
@@ -15,7 +15,7 @@ Default system specs should work fine, I would suggest to initially select **NAT
 
 Bind9 is an opens source domain name system server that can be used to run a caching or authoritative name server.
 
-**Installiation:**
+**Installation**
 * sudo apt-get install bind9 bind9utils bind9-doc
 
 **Primary Master Server Configuration**
@@ -48,7 +48,7 @@ Basic set up should be complete! Test via client or with the dig @ command on th
 
 Tired of boring static ip address? Install a DHCP server!
 
-**Installiation**
+**Installation**
 
 * sudo apt-get install isc-dhcp-server
 
@@ -69,9 +69,9 @@ Main config file located ub /etc/dhcp/, open dhcpd.conf in nano and configure to
         
 } 
 
-Above are the minimum configurations, enter subnet and mask of your network then enter desired ranges, in this instance the dhcp server will issus IP addresses in two ranges 10.0.0.100-150 and 10.0.0.200-225
+Above are the minimum configurations, enter subnet and mask of your network then enter desired ranges, in this instance the dhcp server will issue IP addresses in two ranges 10.0.0.100-150 and 10.0.0.200-225
 
-Next configure DHCP to only issue adddress on your private network
+Next configure DHCP to only issue addresses on your private network
 * sudo nano /etc/default/isc-dhcp-server
 * INTERFACESv4="ens33"  <--private network nic
 * restart service and confirm client is getting ip from server
@@ -96,7 +96,7 @@ Some examples of adding rules
 
 **MASQUERADING**
 
-Maswuerading will allow your private machines connect to the internet via your server, some configuration is required
+Masquerading will allow your private machines connect to the internet via your server, some configuration is required
 
 * enable packet forwarding - sudo nano /etc/default/ufw
 * change DEFUALT_FORWARD_POLICY="**ACCEPT**"

@@ -1,5 +1,5 @@
- <center><h1>Network Services using Ubuntu 20.04.1 LTS</h1></center>
-
+ <center><h1> Network Services using Ubuntu 20.04.1 LTS </h1></center>
+ 
 # Table of Contents
 - [Intro](#Intro)
 - [Distro Install](#Distro-Install)

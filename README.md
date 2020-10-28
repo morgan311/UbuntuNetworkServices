@@ -164,6 +164,6 @@ Add the following rule in the NAT table
         *nat
         :POSTROUTING ACCEPT [0:0]
         # redirect to squid
-        -A PREROUTING-p TCP -s 10.0.0.0/24 --dport 80 -j REDIRECT --to-port 8888\
+        -A PREROUTING-p TCP -s 10.0.0.0/24 --dport 80 -j REDIRECT --to-port 8888
         
 

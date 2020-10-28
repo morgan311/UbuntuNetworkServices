@@ -23,14 +23,14 @@ There are a few items needed to set this appliance  up, in this instance I used 
 Default system specs should work fine, I would suggest to initially select **NAT** network then after add an additional NIC for your LAN. As well the PowerShell snap might be a useful add-on. 
 
 
->## DNS Bind9 ##
+## DNS Bind9 ##
 
 Bind9 is an opens source domain name system server that can be used to run a caching or authoritative name server.
 
->>**Installation**
+>**Installation**
 * sudo apt-get install bind9 bind9utils bind9-doc
 
-**Primary Master Server Configuration**
+>>**Primary Master Server Configuration**
 Adding a DNS zone to bind will allow it to act as a Primary Master server. To do so first edit **named.conf.local** locaed in /etc/bind must be edited.
 
 Add desired Zone name and zone file path.

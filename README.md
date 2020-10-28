@@ -49,6 +49,25 @@ Basic set up should be complete! Test via client or with the dig @ command on th
 Tired of boring static ip address? Install a DHCP server!
 
 **Installiation**
+
 * sudo apt-get install isc-dhcp-server
+
+**Configuration**
+
+Main config file located ub /etc/dhcp/, open dhcpd.conf in nano and configure to align with your server info
+
+* sudo nano /etc/dhcp/dhcpd.conf
+# minimal sample /etc/dhcp/dhcpd.conf
+default-lease-time 600;
+max-lease-time 7200;
+
+subnet 192.168.1.0 netmask 255.255.255.0 {
+ range 192.168.1.150 192.168.1.200;
+ option routers 192.168.1.254;
+ option domain-name-servers 192.168.1.1, 192.168.1.2;
+ option domain-name "mydomain.example";
+}
+
+
 
 

@@ -76,4 +76,32 @@ Next configure DHCP to only issue adddress on your private network
 * INTERFACESv4="ens33"  <--private network nic
 * restart service and confirm client is getting ip from server
 
-## FIREWALL W/UFW ##
+## FIREWALL W/UFW and Masquerading ##
+
+Uncomplicated Firewall is front-end to iptables designed to make firewall management more user friendly and has a nifty NAT capabilities
+
+**INSTALLIATION **
+
+* sudo apt-get install ufw
+* ufw must be enabled - sudo wfw enable
+
+**ADDING RULES**
+
+Some examples of adding rules
+
+* sudo ufw allow 22  <-- open SSH port
+* sudo ufw deny 22
+* sudo ufw allow proto tcp from 192.168.1.100 to any port 22  <-- allow specific host to SSH
+* active rules can be checked with - sudo ufw status
+
+**MASQUERADING**
+
+Maswuerading will allow your private machines connect to the internet via your server, some configuration is required
+
+* enable packet forwarding - sudo nano /etc/default/ufw
+* change DEFUALT_FORWARD_POLICY="**ACCPET**"
+
+
+
+
+

@@ -38,7 +38,7 @@ Add desired Zone name and zone file path.
         zone "morgan.com" {
              type master;
              file "/etc/bind/db.morgan.com";
-        };
+        }
         
 Copy and rename existing db.local file
 * sudo cp /etc/bind/db.local /etc/bind/db.morgan.com 
@@ -138,7 +138,7 @@ Lastly, disable and re-enable UFW to apply settings
 
 Squid is a caching and forwarding web proxy with a multitude of uses. 
 
-**Note: There are thousnds of lines in the squid.conf configuration file, I recommend copying the original file and manipulate the copy until you get it right on something like Notepad++ or your favorite text editor**
+**Note: There are thousands of lines in the squid.conf configuration file, I recommend copying the original file and manipulate the copy until you get it right on something like Notepad++ or your favorite text editor**
 * sudo cp /etc/squid/squid.conf /etc/squid/squid.conf.original
 
 **INSTALLIATION**
@@ -148,7 +148,7 @@ Squid is a caching and forwarding web proxy with a multitude of uses.
 
 Configure squid by editing /etc/squid/squid.conf
 
-chnage default listening port edit the http_port directive
+change default listening port edit the http_port directive
 * http_port 8888
 * the on-disk cache can be adjusted by editing cache_dir for this setup defaults are fine
 **NOTE - DONT FORGET TO OPEN PORT 8888 on your server!!**
@@ -162,12 +162,12 @@ next in the http_access section add the following
 Now we can set up some redirections of sites we do not want out users to access. To do so we need to create another ACL.
 
 At the bottom of the ACL section of /etc/squid/squid.conf add the following two lines
-* acl blocksites dstdomain .neverssl.com
+* acl blockedsites dstdomain .neverssl.com
 * deny_info https://www.google.com all
 **In the top line you can add the domains you wish to block
 
 At the top of the http_access section add the following line **above** your allow statement 
-* http_reply_access deny blocksites all
+* http_reply_access deny blockedsites all
 
 Next we need to set up the proxy to act transparently, to do so we need to add a new rule to our /etc/ufw/befor.rules
 * sudo nano /etc/ufw/before.rules

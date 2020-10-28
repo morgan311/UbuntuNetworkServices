@@ -6,6 +6,7 @@
 - [DHCP](#DHCP)
 - [Uncomplicated Firewall](#FIREWALL-ufW-and-Masquerading)
 - [Squid Proxy](#SQUID)
+---
 
 # Network Services using Ubuntu 20.04.1 LTS #
 

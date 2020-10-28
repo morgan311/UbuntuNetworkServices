@@ -1,11 +1,11 @@
 ---
 # Table of Contents
-- [Heading](#Network-Services-using-Ubuntu-20.04.1-LTS)
-- [Heading](#Distro-Install)
-- [Heading](#DNS w/Bind)
-- [Heading](#DHCP)
-- [Heading](#FIREWALL W/UFW and Masquerading)
-- [Heading](#SQUID)
+- [Intro](#Network-Services-using-Ubuntu-20.04.1-LTS)
+- [Distro Install](#Distro-Install)
+- [DNS Bind9](#DNS-w/Bind)
+- [DHCP](#DHCP)
+- [Uncomplicated Firewall](#FIREWALL-W/UFW-and-Masquerading)
+- [Squid Proxy](#SQUID)
 
 # Network Services using Ubuntu 20.04.1 LTS #
 

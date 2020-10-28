@@ -99,7 +99,11 @@ Some examples of adding rules
 Masquerading will allow your private machines connect to the internet via your server, some configuration is required
 
 * enable packet forwarding - sudo nano /etc/default/ufw
-* change DEFUALT_FORWARD_POLICY="**ACCEPT**"
+* edit DEFUALT_FORWARD_POLICY="**ACCEPT**"
+* next edit /etc/ufw/sysctl.conf
+* uncomment net/ipv4/ip_forward=1 **uncomment ipv6 is desired**
+* 
+
 
 
 

@@ -143,6 +143,7 @@ chnage default listening port edit the http_port directive
 
 set squid access control by configuring an ACL for your private network, add the following below the ACL section
 * acl MP_NET src 10.0.0.0/24  <-- acl name / allowed addresses
+        #ac
 next in the http_access section add the following
 * http_access allow MP_NET
 

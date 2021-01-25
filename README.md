@@ -180,7 +180,7 @@ Add the following rule in the NAT table
         -A PREROUTING-p TCP -s 10.0.0.0/24 --dport 80 -j REDIRECT --to-port 8888
         
 
-Lastly confirm that client machine cannot connect the **blockedsites** list!
+Lastly confirm that client machine cannot connect the **blockedsites** list
 
-**Thanks for checking out my Network Services on Ubuntu server repo! Check the folder for my configuration files!
+
 
